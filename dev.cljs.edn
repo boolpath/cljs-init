@@ -1,0 +1,7 @@
+^{:auto-bundle :webpack}
+{:main "app.dev"
+ :source-map true
+ :optimizations :none
+ :pretty-print  true
+ :bundle-freq :smart
+ :closure-defines {cljs.core/*global "window"}}

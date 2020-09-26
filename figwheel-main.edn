@@ -1,0 +1,5 @@
+{:watch-dirs ["src/cljc" "src/cljs" "env/dev/cljs"]
+ :css-dirs ["resources/public/css"]
+ :ring-handler app.handler/app
+;;  :open-url false
+ }
