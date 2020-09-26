@@ -49,3 +49,10 @@
 (ns ^:figwheel-hooks app.core ...)
 (defn ^:after-load mount-root ...)
 ```
+
+- Heroku buildpacks (cli commands)
+```
+heroku buildpacks:remove heroku/clojure
+heroku buildpacks:add heroku/nodejs
+heroku buildpacks:add heroku/clojure
+```
