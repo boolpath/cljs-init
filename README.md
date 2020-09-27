@@ -23,7 +23,7 @@
 
 - figwheel-main.edn
 ```
-{:watch-dirs ["src/cljc" "src/cljs" "env/dev/cljs"]
+{:watch-dirs ["src/common" "src/client" "env/dev/client"]
  :css-dirs ["resources/public/css"]
  :ring-handler app.handler/app}
 ```

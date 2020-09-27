@@ -27,7 +27,7 @@
                  [venantius/accountant "0.2.5"
                   :exclusions [org.clojure/tools.reader]]]
 
-  :source-paths ["src/clj" "src/cljc" "src/cljs"]
+  :source-paths ["src/server" "src/common" "src/client"]
   :resource-paths ["resources" "target/cljsbuild"]
 
   :minify-assets
@@ -47,18 +47,18 @@
                                   [figwheel-sidecar "0.5.20"]
                                   [nrepl "0.8.0"]
                                   [pjstadig/humane-test-output "0.10.0"]]
-                   :source-paths ["env/dev/clj"]
+                   :source-paths ["env/dev/server"]
                    :injections [(require 'pjstadig.humane-test-output)
                                 (pjstadig.humane-test-output/activate!)]}
              :uberjar {:hooks [minify-assets.plugin/hooks]
-                       :source-paths ["env/prod/clj"]
+                       :source-paths ["env/prod/server"]
                        :prep-tasks ["compile" ["cljsbuild" "once" "min"]]
                        :env {:production true}
                        :aot :all
                        :omit-source true}}
 
   :cljsbuild {:builds {:min
-                       {:source-paths ["src/cljs" "src/cljc" "env/prod/cljs"]
+                       {:source-paths ["src/client" "src/common" "env/prod/client"]
                         :compiler
                         {:target :bundle
                          :bundle-cmd {:none ["npx" "webpack" "--mode=development"]
