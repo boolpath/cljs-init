@@ -14,7 +14,7 @@
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/clojurescript "1.10.773" :scope "provided"]
                  [com.bhauman/figwheel-main "0.2.11"]
-                 [reagent "0.10.0" :exclusions [cljsjs/react cljsjs/react-dom]]
+                 [reagent "1.0.0" :exclusions [cljsjs/react cljsjs/react-dom]]
                  [reagent-utils "0.3.3"]
                  [hiccup "1.0.5"]
                  [ring "1.8.1"]
