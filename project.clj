@@ -11,9 +11,9 @@
             [lein-asset-minifier "0.4.6"
              :exclusions [org.clojure/clojure]]]
 
-  :dependencies [[org.clojure/clojure "1.10.1"]
-                 [org.clojure/clojurescript "1.10.773" :scope "provided"]
-                 [com.bhauman/figwheel-main "0.2.11"]
+  :dependencies [[org.clojure/clojure "1.10.3"]
+                 [org.clojure/clojurescript "1.10.844" :scope "provided"]
+                 [com.bhauman/figwheel-main "0.2.13"]
                  [reagent "1.0.0" :exclusions [cljsjs/react cljsjs/react-dom]]
                  [reagent-utils "0.3.3"]
                  [hiccup "1.0.5"]
