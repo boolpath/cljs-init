@@ -1,6 +1,5 @@
 (ns ^:figwheel-hooks app.core
   (:require
-    ["@apollo/client" :as apollo]
     [reagent.core :as reagent :refer [atom]]
     [reagent.dom :as rdom]
     [reagent.session :as session]
@@ -111,5 +110,3 @@
       (boolean (reitit/match-by-path router path)))})
   (accountant/dispatch-current!)
   (mount-root))
-
-(js/console.log apollo)
